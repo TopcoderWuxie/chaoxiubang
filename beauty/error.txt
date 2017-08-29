@@ -1,0 +1,37 @@
+https://img.1985t.com/uploads/attaches/2011/02/1298685116-XA1met.jpg
+
+File "D:\Anaconda\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "G:\beauty\beauty\pipelines.py", line 26, in process_item
+    urllib.urlretrieve(url, file_path)
+  File "D:\Anaconda\lib\urllib.py", line 98, in urlretrieve
+    return opener.retrieve(url, filename, reporthook, data)
+  File "D:\Anaconda\lib\urllib.py", line 245, in retrieve
+    fp = self.open(url, data)
+  File "D:\Anaconda\lib\urllib.py", line 213, in open
+    return getattr(self, name)(url)
+  File "D:\Anaconda\lib\urllib.py", line 443, in open_https
+    h.endheaders(data)
+  File "D:\Anaconda\lib\httplib.py", line 1053, in endheaders
+    self._send_output(message_body)
+  File "D:\Anaconda\lib\httplib.py", line 897, in _send_output
+    self.send(msg)
+  File "D:\Anaconda\lib\httplib.py", line 859, in send
+    self.connect()
+  File "D:\Anaconda\lib\httplib.py", line 1278, in connect
+    server_hostname=server_hostname)
+  File "D:\Anaconda\lib\ssl.py", line 353, in wrap_socket
+    _context=self)
+  File "D:\Anaconda\lib\ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "D:\Anaconda\lib\ssl.py", line 838, in do_handshake
+    match_hostname(self.getpeercert(), self.server_hostname)
+  File "D:\Anaconda\lib\ssl.py", line 272, in match_hostname
+    % (hostname, ', '.join(map(repr, dnsnames))))
+CertificateError: hostname 'img.1985t.com' doesn't match either of 'desk123.duba.com', 'dh1.cmcmcdn.com',
+'s01.10101111cdn.com', 's02.10101111cdn.com', 'www.duba.com', 'xinwen.duba.com', 'test.xiaokele.qingcdn.com',
+'image.xunyou.com', 'portal.baishancloud.com', 'dhimg.duba.com', 'dl.doyo.cn', 'img.cmcmcdn.com',
+'tejia.duba.com', 'ent.duba.com', 'hotnews.duba.com', 'hotnews2.duba.com', 'news.xunyou.com',
+'www.baishancloud.com', 'baishancloud.com'
+
+
